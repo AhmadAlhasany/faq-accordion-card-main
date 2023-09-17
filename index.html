@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css"/>
+<title>Frontend Mentor | FAQ Accordion Card</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+  </style>
+
+</head>
+
+<body>
+<main>
+  <img class = "box" src="./images/illustration-box-desktop.svg">
+  <div class = "image" >
+      <img class = "back" src="./images/bg-pattern-mobile.svg">
+      <img class = "front" src="./images/illustration-woman-online-mobile.svg">
+      <img class = "woman" src="./images/illustration-woman-online-desktop.svg">
+      <img class = "shadow" src="./images/bg-pattern-desktop.svg">
+  </div>
+  <div class = "questions">
+    <h1>FAQ</h1>
+    <div class = "question">
+      <p class = "tq"> How many team members can I invite? </p><input type="checkbox" id = "ch1"  class = "ch"><label for="ch1"><img src="./images/icon-arrow-down.svg"></label>
+      <p class = "answer 1"> You can invite up to 2 additional users on the Free plan. There is no limit on 
+      team members for the Premium plan. </p>
+    </div >
+    <div class = "question">
+      <p class = "tq"> What is the maximum file upload size?</p>  <input type="checkbox" id = "ch2" class = "ch"><label for="ch2"><img src="./images/icon-arrow-down.svg"></label>
+      <p class = "answer 2">No more than 2GB. All files in your account must fit your allotted storage space.
+      </p>
+    </div>
+    <div class = "question">
+      <p class = "tq"> How do I reset my password? </p> <input type="checkbox" id = "ch3" class = "ch"><label for="ch3"><img src="./images/icon-arrow-down.svg"></label>
+      <p class = "answer 3"> Click “Forgot password” from the login page or “Change password” from your profile page.
+       A reset link will be emailed to you.
+      </p>  
+    </div>
+    <div class = "question"> 
+      <p class = "tq">Can I cancel my subscription?</p>  <input type="checkbox" id = "ch4" class = "ch"><label for="ch4"><img src="./images/icon-arrow-down.svg"></label>
+      <p class = "answer 4"> Yes! Send us a message and we’ll process your request no questions asked.
+      </p>
+    </div>
+    <div class = "question"> 
+     <p class = "tq">Do you provide additional support? </p><input type="checkbox" id = "ch5" class = "ch"><label for="ch5"> <img src="./images/icon-arrow-down.svg"></label>
+     <p class = "answer 5">Chat and email support is available 24/7. Phone lines are open during normal business hours.
+     </p>
+    </div>
+  </div>
+
+  </div>
+</main>
+<script src="js.js"></script>
+</body>
+</html>

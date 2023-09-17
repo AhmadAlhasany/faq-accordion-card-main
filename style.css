@@ -1,0 +1,156 @@
+html{
+    box-sizing: content-box;
+    font-family: 'Kumbh Sans';
+    font-size: 12px;
+    width: 100%;
+    height: 1000px;
+    background: linear-gradient(to bottom, hsl(273, 75%, 66%),hsl(240, 73%, 65%));
+}
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 980px; 
+}
+main{
+    width: 336px;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    border-radius: 25px;
+    box-shadow: 1px 1px 6px 0px rgba(0,0,0,0.75);
+
+}
+.image{
+    position :relative;
+    height:100px;
+}
+.image img{
+    position:absolute;
+    width: 80%;
+}
+.image .back{
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.image .front{
+    top: -20%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.ch:checked ~ .answer{
+    display: block;
+}
+
+h1{
+    margin: 16px;
+    margin-top: 1px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.questions{
+    padding: 20px;
+}
+
+.question{
+    padding: 10px;
+    border-bottom: 2px solid hsl(240, 5%, 91%);
+    margin-bottom:10px;
+    padding-top: 0;
+}
+.question .tq{
+    display: inline;
+    font-size: 1.1rem;
+}
+.ch:checked + .tq {
+    font-weight: 700;
+}
+.question  label{
+    float: right ;
+}
+
+.ch:checked + label img{
+    transform: rotate(180deg); 
+}
+
+.answer, .ch{
+    display: none;
+}
+
+.answer{
+    color:hsl(240, 6%, 50%);
+    margin-right: 20px;
+    padding-right: 10px;
+}
+.box, .woman, .shadow {
+    display: none;
+}
+
+@media(min-width:1100px){
+    html{
+        font-size: 14.5px;
+    }
+    .box, .woman, .shadow{
+        display:block;
+    }
+    .front, .back{
+        display: none;
+    }
+    main{
+        flex-direction: row;
+        width:1056px;
+        height:600px;
+        position:relative;
+        
+    }
+    .image{
+        width: 50%;
+        height:100%;
+        overflow: hidden;
+    }
+    .questions{
+        width: 50%;
+        max-height:90%;
+        padding: 30px;
+        padding-right: 50px;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+    }
+    .questions h1{
+        align-self: start;
+        margin-left: 10px;
+        margin-bottom:21px;
+    }
+    .box{
+        position: absolute;
+    }
+    .woman, .shadow{
+        position:absolute;
+
+    }
+    .image .woman,.image .shadow{
+        left:-15%;
+        top:50%;
+        width: 500px;
+        transform: translate(0%, -50%);
+
+    }
+    .image .woman{
+        z-index: 100;
+    }
+    .image .shadow{
+        z-index: 99;
+    }
+    .box {
+        left: -8.7%;
+        top:50%;
+        transform: translate(0%, -22%);
+        z-index: 101;
+    }
+    
+
+}
